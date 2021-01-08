@@ -1,0 +1,99 @@
+When in doubt a brief form of commands can be found on Github.com
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Biruk-Tesfaye-Legesse-IT/MyPersonalWeb.git
+git push -u origin master
+
+
+========================Configuring Name and Email on Git==================================
+
+git config --global user.name "Biruk-Tesfaye-Legesse-IT"  
+
+git config --global user.email "it.biruk.tesfaye2913@gmail.com" 
+
+git config --list
+===========================================================================================
+Projects/ Global Repositories
+-----------------------------
+
+pushing an existing repository from the command line
+
+
+//For Trial
+git remote add origin https://github.com/Biruk-Tesfaye-Legesse-IT/Trial
+git push -u origin master
+
+//For MyPersonalWeb
+git remote add origin https://github.com/Biruk-Tesfaye-Legesse-IT/MyPersonalWeb.git
+git push -u origin master
+
+
+//For MyCv 
+git remote add origin https://github.com/Biruk-Tesfaye-Legesse-IT/MyCv
+git push -u origin master
+
+
+=================================Create File============================================
+
+touch file1.txt //you can create the file manually 
+
+=================================Initialize git in a file============================================
+git init           //This will create a .git directory in your current directory
+	
+ 
+ 
+ 
+=================================Add a file to be staged============================================
+
+git add file1.txt (or *.txt , or .  to track all files) 
+
+=================================Commit staged files============================================
+
+
+To commit the file to the local repository, issue the commit command 
+git commit  -m  "Your Commit message"
+git commit       //if you need to write a long message   :wq(to save and exit)
+git commit -a -m/-am  "Your Message" //to skip the staging area 
+
+
+=============================================================================
+
+pwd //to view current directory  
+ls or ls -a (hidden files)       //to view content of the directory  
+cd drive-letter:   //to change drive (d: , e: ,…..)           	
+mkdir project1   //create the directory  
+cd project1   //change to the directory 
+
+=============================================================================
+
+
+git log //to review history ***
+git log --oneline //to print on one line  
+git log  -p -2 // the last two commits 
+git log  --since=1.weeks //since last week  
+git log –since=”2014-05-05” //since specific day 
+git log  --author=”name” //change made by specific author
+
+git status // to view status 
+git status -s //to view status  (-s shows a short one line version)
+git diff --cached //to see staged changes
+
+
+ 
+git checkout HasID(45678789e8789789 )   or git checkout -- filename //to return to any point of time
+
+
+git reset HEAD filename (unstages the file) //to unstage a change on a file before you have committed it
+
+
+git rm <file> //to Delete a untracked file  
+
+ 
+git rm -f <file > //to deleted staged file (after you add the file)
+
+to remove file from staging area (after you add the file) 
+
+git rm –cached <file > 
+
